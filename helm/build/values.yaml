@@ -1,0 +1,15 @@
+app:
+  name: training-divyesh-poi-map-app
+  namespace: training-divyesh
+  cluster: .apps.rosa916.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rosa916-rvhvd/training-divyesh-frontend
+  org: rosa916-rvhvd
+  name: training-divyesh-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: training-divyesh/poi-map-app
+  tag: latest
